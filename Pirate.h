@@ -5,10 +5,11 @@
 
 class Pirate : public Move {
 public:
-    string getName() override { return "Pirate"; }
-    bool beats(Move* other) override {
-        return other->getName() == "Robot" || other->getName() == "Monkey";
+    string getName() override {
+        return "Pirate";
     }
+
+    bool beats(Move* other) override;
 };
 
-#endif 
+#endif
