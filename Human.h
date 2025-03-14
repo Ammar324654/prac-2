@@ -2,15 +2,12 @@
 #define HUMAN_H
 
 #include "Player.h"
-#include <iostream>
+#include "Move.h"
 
 class Human : public Player {
-private:
-    string name;
 public:
-    Human(string name = "Human") : name(name) {} 
     Move* makeMove() override;
-    string getName() override { return name; }
+    string getName() override;
 };
 
-#endif 
+#endif
