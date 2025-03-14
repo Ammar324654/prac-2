@@ -6,9 +6,9 @@ using namespace std;
 
 class Move {
 public:
-    virtual string getName() = 0;   // Pure virtual function to get move name
-    virtual bool beats(Move* other) = 0;  // Determines if the move beats another move
-    virtual ~Move() {}   // Virtual destructor for proper cleanup
+    virtual string getName() = 0;
+    virtual bool beats(Move* other) = 0; 
+    virtual ~Move() {}   
 };
 
 #endif // MOVE_H
