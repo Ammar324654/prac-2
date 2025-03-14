@@ -1,0 +1,14 @@
+#ifndef PIRATE_H
+#define PIRATE_H
+
+#include "Move.h"
+
+class Pirate : public Move {
+public:
+    string getName() override { return "Pirate"; }
+    bool beats(Move* other) override {
+        return other->getName() == "Robot" || other->getName() == "Monkey";
+    }
+};
+
+#endif 
